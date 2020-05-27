@@ -42,6 +42,7 @@ class Song
       song
     else
       here_it_is
+    end 
   end
 
 end
