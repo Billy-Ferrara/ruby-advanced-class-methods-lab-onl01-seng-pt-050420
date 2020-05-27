@@ -34,7 +34,12 @@ class Song
   end
 
   def self.find_or_create_by_name(song_name)
-    
+    here_it_is = self.all.detect {|i| i.name == song_name}
+    if here_it_is == nil
+      song = self.new
+      song.name = song_name
+      song.save
+      song 
   end
 
 end
