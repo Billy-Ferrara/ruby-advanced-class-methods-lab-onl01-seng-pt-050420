@@ -26,7 +26,10 @@ class Song
     song = self.new
     song.name = song_name
     song.save
-    song 
+    song
   end
+
+  def sef.find_by_name(song_name)
+  end 
 
 end
